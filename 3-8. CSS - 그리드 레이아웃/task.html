@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .container {
+            width: 700px;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 100px);
+            gap: 20px;
+        }
+
+        .box {
+            text-align: center;
+            line-height: 100px;
+        }
+
+        imgs {
+            
+        }
+
+        .box1 {
+            background-color: aqua;
+            grid-column: 1 / 4 ;
+        }
+
+        .box2 {
+            background-color: aquamarine;
+            grid-row: 2 / 4;
+        }
+
+        .box3 {
+            background-color: aliceblue;
+            grid-column: 2 / 4;
+        }
+
+        .box4 {
+            background-color: antiquewhite;
+        }
+
+        .box5 {
+            background-color: azure;
+        }
+
+        @media screen and (min-width: 350px) and (max-width: 700px) {
+            * {
+            margin: 0;
+        }
+
+        }
+
+        @media screen and (max-width: 350px) {
+            * {
+            margin: 0;
+        }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="./imgs/image copy 2.png" class="box box1">1</img>
+        <img src="./imgs/image copy 3.png" class="box box2">2</img>
+        <img src="./imgs/image copy 4.png" class="box box3">3</img>
+        <img src="./imgs/image copy 5.png" class="box box4">4</img>
+        <img src="./imgs/image copy.png" class="box box5">5</img>
+        <img src="./imgs/image.png" class="box box6">6</img>
+    </div>
+</body>
+</html>

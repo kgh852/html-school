@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    color: white;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url(./imgs/main.png) center no-repeat;
+    background-size: cover;
+    padding: 30px 8%;
+    position: relative;
+}
+
+.banner {
+    width: 150px;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav button {
+    background-color: #db0001;
+    color: white;
+    padding: 10px 24px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+}

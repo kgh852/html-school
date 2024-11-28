@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background: url('./imgs/image\ copy.png') no-repeat fixed;
+      background-size: cover;
+    }
+
+    .maintxt {
+      color: black;
+      text-align: center;
+      position: relative;
+      top: 100px;
+      font-size: 10rem;
+    }
+
+    .maintxt::before {
+      content: "google";
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 900px) {
+      body {
+        background: url('./imgs/image\ copy\ 2.png') no-repeat fixed;
+        background-size: cover;
+      }
+
+      .maintxt {
+        font-size: 10rem;
+      }
+
+      .maintxt::before {
+        content: "samsung";
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      body {
+        background: url('./imgs/image.png') no-repeat fixed;
+        background-size: cover;
+      }
+
+      .maintxt {
+        font-size: 10rem
+      }
+
+      .maintxt::before {
+        content: "naver";
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1 class="maintxt"></h1>
+</body>
+</html>

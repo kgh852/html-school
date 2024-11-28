@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>주문하기</legend>
+            <h3>주문 할 상품을 선택해주세요</h3>
+            <label for=""><input type="checkbox"> 과일선물세트 <input type="number" value="0" max="5"> (최대 5개)</label> <br>
+            <label for=""><input type="checkbox"> 홍삼선물세트 <input type="number" value="0" max="10" step="2"> (2개 1세트, 최대 10개)</label> <br>
+            <h3>포장 선택</h3>
+            <label for=""><input type="radio" name="go"> 리본 포장</label>
+            <label for=""><input type="radio" name="go"> 리본 포장 안함</label>
+        </fieldset> <br>
+        <fieldset>
+            <legend>배송 정보</legend>
+            <ul>
+                <li><label for="name">이름 </label><input type="text" id="name" placeholder="공백 없이 입력하세요"></li>
+                <li><label for="phone">연락처 </label><input type="tel" id="phone" placeholder="-를 빼고 입력하세요"></li>
+                <li><label for="email">이메일 </label><input type="email" id="email"> @ <select name="email"><option value="">gbsw.com</option><option value="">gmail.com</option><option value="">naver.com</option></select></li>
+                <li><label for="file">박스 디자인 이미지 <input type="file" id="file"></label></li>
+                <li><label for="hope">희망 배송일 <input type="date" min="2024-09-01" max="2024-09-10"></label></li>
+                <li>배송 메시지</li><textarea name="" id="" maxlength="50"></textarea>
+            </ul>
+        </fieldset> <br>
+        <input type="submit">
+        <input type="reset">
+    </form>
+</body>
+</html>

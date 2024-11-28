@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        table {
+            border: 1px solid black;
+            text-align: center;
+            height: 50px;
+            width: 500px;
+            border-collapse: separate;
+        }
+
+        td,th {
+            height: 50px;
+            width: 500px;
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .day {
+            background-color: blue;
+        }
+
+        .program {
+            background-color: green;
+        }
+
+        .art {
+            background-color: orange;
+        }
+
+        .java {
+            background-color: yellow;
+        }
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption>1-1 시간표</caption>
+      <tr>
+        <th></th>
+        <th class="day">월</th>
+        <th class="day">화</th>
+        <th class="day">수</th>
+        <th class="day">목</th>
+        <th class="day">금</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>자율</td>
+        <td class="art" rowspan="2">미술</td>
+        <td>수학</td>
+        <td>사회</td>
+        <td>수학</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>진로</td>
+        <td>국어</td>
+        <td>응프</td>
+        <td>과학</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>영어</td>
+        <td>과학</td>
+        <td>사회</td>
+        <td>응프</td>
+        <td class="program" rowspan="2">응개</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>사회</td>
+        <td>체육</td>
+        <td>체육</td>
+        <td>영어</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>수학</td>
+        <td>국어</td>
+        <td>영어</td>
+        <td class="java" rowspan="3">자바</td>
+        <td>동아리</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>과학</td>
+        <td class="java" rowspan="2">자바</td>
+        <td>응개</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>국어</td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+  </body>
+</html>
