@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>백지헌 팬 페이지</title>
-    <!-- FontAwesome 로드 -->
+    <title>Ji Heon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/832f1626a8.js" crossorigin="anonymous"></script>
     <style>
         * {
@@ -19,11 +21,10 @@
         }
 
         body {
-            background-color: #F0EBE8;
+            background-color: #fff;
             font-family: Arial, sans-serif;
         }
 
-        /* 메인 섹션 */
         .hero-section {
             width: 100%;
             height: 100vh;
@@ -32,7 +33,7 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            background-image: url(./assets/imgs/image%208.png); /* 경로 수정 */
+            background-image: url(./assets/imgs/image%208.png);
             background-size: cover;
             background-position: center;
             position: relative;
@@ -51,71 +52,175 @@
         }
 
         .hero-section h2 {
-            font-size: 2.5rem;
+            font-size: 4rem;
             z-index: 2;
+            font-family: "Caveat", cursive;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;                                   
         }
 
         .hero-section p {
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             z-index: 2;
             margin-top: 10px;
         }
 
-        .content-section {
+        .gallery-section {
             padding: 50px 5%;
             text-align: center;
+            width: 100%;
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
         }
 
-        .content-section img {
-            width: 200px;
-            height: 200px;
+        .gallery-section img {
+            width: 250px;
+            height: 250px;
             border-radius: 50%;
             object-fit: cover;
-            margin-bottom: 20px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
         }
 
-        .content-section h3 {
+        .gallery-section h3 {
             font-size: 2rem;
             margin-bottom: 10px;
         }
 
-        .content-section p {
+        .gallery-section p {
             font-size: 1rem;
             color: #555;
-        }
-
-        /* 인스타그램 아이콘 스타일 */
-        .instagram-icon {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            font-size: 3rem;
-            color: #fff;
-            transition: color 0.3s;
-            z-index: 2;
         }
 
         .instagram-icon:hover {
             color: #E1306C;
         }
+
+        .gallery-item {
+            text-align: center;
+            max-width: 200px;
+        }
+
+        .gallery-item .linkedimg {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery-item .linkedimg:hover {
+            transform: scale(1.1);
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
+        }
+
+        .gallery-item h4 {
+            margin-top: 10px;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .progress-bar {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background-color: rgba(255, 255, 255, 0.3);
+            overflow: hidden;
+        }
+
+        .progress-bar span {
+            display: block;
+            height: 100%;
+            width: 0;
+            background-color: #fff;
+            animation: progress 5s linear infinite;
+        }
+
+        @keyframes progress {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero-section h2, .hero-section p {
+            animation: fadeIn 2s ease-in-out forwards;
+            opacity: 0;
+        }
+
+        .hero-section h2 {
+            animation-delay: 0.5s; 
+        }
+
+        .hero-section p {
+            animation-delay: 1s; 
+        }
     </style>
 </head>
 <body>
-    <div class="hero-section">
-        <h2>Welcome to Ji Heon Fan Page</h2>
-        <p>백지헌에 대한 모든 것을 알아보세요!</p>
-        <a href="https://www.instagram.com/your_instagram" target="_blank" class="instagram-icon">
+    <section class="hero-section">
+        <h2>Baek Ji Heon</h2>
+        <div class="progress-bar">
+            <span></span>
+        </div>
+    </section>
+
+    <section class="gallery-section">
+        <img id="jiheon-image" src="./assets/imgs/image%2012.png" alt="Ji Heon Logo">
+        <h3>About Ji Heon</h3>
+        <p>백지헌은 예쁘다</p>
+
+        <a href="https://www.instagram.com/jiheonnibaek/" target="_blank" class="instagram-icon">
             <i class="fab fa-instagram"></i>
         </a>
-    </div>
 
-    <div class="content-section">
-        <img id="jiheon-image" src="./assets/imgs/image%2012.png" alt="Ji Heon Logo"> <!-- 경로 수정 -->
-        <h3>About Ji Heon</h3>
-        <p>백지헌은 놀라운 재능과 매력을 가진 아티스트입니다. 그녀의 여정을 응원하세요!</p>
-    </div>
+        <div class="gallery-item">
+            <img src="./assets/imgs/image1.png" alt="Home" class="linkedimg">
+            <h4>Home</h4>
+        </div>
+        <div class="gallery-item">
+            <img src="./assets/imgs/image2.png" alt="About" class="linkedimg">
+            <h4>About</h4>
+        </div>
+        <div class="gallery-item">
+            <img src="./assets/imgs/image3.png" alt="Gallery" class="linkedimg">
+            <h4>Gallery</h4>
+        </div>
+    </section>
 
     <script>
+        const images = [ 
+            './assets/imgs/image%20copy.png',
+            './assets/imgs/image%20copy%202.png', 
+            './assets/imgs/image.png',
+            './assets/imgs/image%208.png',
+        ];
+        let currentIndex = 0;
+
+        function changeImage() {
+            const heroSection = document.querySelector('.hero-section');
+            currentIndex = (currentIndex + 1) % images.length;
+            heroSection.style.backgroundImage = `url(${images[currentIndex]})`;
+        }
+
+        setInterval(changeImage, 5000);
     </script>
 </body>
 </html>

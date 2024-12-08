@@ -37,4 +37,11 @@ nav button {
     border-radius: 10px;
     border: 0;
     outline: 0;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.btn button:nth-child(1) {
+    background-color: transparent;
+    border: 1px solid #fff;
 }
