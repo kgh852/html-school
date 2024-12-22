@@ -2,7 +2,7 @@
 
 #### background-color : 배경색 지정
 - **구문**: `background-color: <16진수값> | <rgb, rgba> | <색상명>;`
-- 배경색은 상속되지 않음.
+- 배경색은 상속되지 않음
 
 ---
 
@@ -21,11 +21,11 @@
 
 ### background-image : 배경 이미지 설정
 - **구문**: `background-image: url(<파일 경로>);`
-- 이미지가 배경으로 사용됨.
+- 이미지가 배경으로 사용됨
 
 ### background-repeat : 배경 이미지 반복 설정
 - **구문**: `background-repeat: repeat | space | round | no-repeat;`
-- 기본값은 `repeat`로 이미지를 반복하여 배경을 채움.
+- 기본값은 `repeat`로 이미지를 반복하여 배경을 채움
 
 ---
 
@@ -60,17 +60,17 @@
 
 #### linear-gradient : 선형 그라데이션
 - **구문**: `background: linear-gradient(to <방향>, <색상1>, <색상2>, ...);`
-  - `to`와 함께 방향을 지정하거나 각도로 설정할 수 있음.
-  - 색상 중지점 설정으로 부드러운 색상 변화를 만들 수 있음.
+  - `to`와 함께 방향을 지정하거나 각도로 설정할 수 있음
+  - 색상 중지점 설정으로 부드러운 색상 변화를 만들 수 있음
 
 #### radial-gradient : 원형 그라데이션
 - **구문**: `background: radial-gradient(<모양> <크기> at <위치>, <색상1>, <색상2>, ...);`
-  - `모양`: `circle`(원형) 또는 `ellipse`(타원형).
+  - `모양`: `circle`(원형) 또는 `ellipse`(타원형)
   - `크기`: `closest-side`, `closest-corner`, `farthest-side`, `farthest-corner` 중 선택.
-  - `위치`: 그라데이션이 시작되는 위치 지정.
+  - `위치`: 그라데이션이 시작되는 위치 지정
 
 ---
 
 ### repeating-linear-gradient : 반복되는 선형 그라데이션
 - **구문**: `background: repeating-linear-gradient(<방향>, <색상1>, <색상2>, ...);`
-- 그라데이션이 반복되는 패턴을 생성하여 배경에 적용.
+- 그라데이션이 반복되는 패턴을 생성하여 배경에 적용
